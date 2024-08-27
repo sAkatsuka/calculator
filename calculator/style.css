@@ -1,0 +1,70 @@
+/* テーブル */
+table {
+    /* 電卓 */
+    width: 350px;
+    height: 400px;
+    /* 影 */
+    border: solid 1px #dcdcdca4;
+    border-right: solid 4px #dcdcdca4;
+    border-bottom: solid 4px #dcdcdca4;
+    border-radius: 10px;
+    /* インラインを中央に配置 */
+    text-align: center;
+    /* 余白 */
+    padding: 8px;
+    margin: 20px;
+}
+
+input {
+    /* ボタンサイズ */
+    width: 70px;
+    height: 70px;
+    /* 文字サイズ */
+    font-size: x-large;
+    /* 数字の背景色 */
+    background-color: rgba(214, 206, 206, 0.643);
+    /* ボタンの設定 */
+    border: none;
+    border-radius: 20px;
+    /* クリック時の黒枠を消す */
+    outline: none;
+}
+
+/* ディスプレイの設定 */
+.display {
+    width: 300px;
+    text-align: right;
+    /* 見た目の設定 */
+    background: #eee8e8;
+    border-top: solid #dcdcdca4 5px;
+    border-bottom: solid #dcdcdca4 5px;
+    border-left: solid #b6b6b6 6px;
+    border-radius: 5px;
+}
+/* 演算子の背景色を上書き */
+.operator {
+    background-color: #a8eedf;
+}
+/* 記号＝の部分の背景色を上書き */
+.equal {
+    background-color: #b6b6b6;
+}
+
+/* カーソルを乗せた時の色 */
+input:hover {
+    background: #726f6fb9;
+}
+.display:hover {
+    background: #ffffff;
+}
+.operator:hover {
+    background: #6cd8b8;
+}
+
+/* クリック時の色 */
+input:active {
+    background: #5a5a5a;
+}
+.operator:active {
+    background: #2c80b4;
+}
